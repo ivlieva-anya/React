@@ -1,9 +1,15 @@
+"use strict";
 
-export default function Employers(){
-
-
-let employersNames = employers.filter(elem =>{
-    return (elem.length > 0 && elem.length != '')
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-employersNames = employersNames.map(elem => elem.toLowerCase().trim());
+exports.default = Employers;
+
+function Employers() {
+  var employersNames = employers.filter(function (elem) {
+    return elem.length > 0 && elem.length != '';
+  });
+  employersNames = employersNames.map(function (elem) {
+    return elem.toLowerCase().trim();
+  });
 }
