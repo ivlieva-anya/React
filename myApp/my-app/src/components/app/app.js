@@ -14,16 +14,23 @@ import '../post-list-item/post-list-item.css';
 import '../post-status-filter/post-status-filter.css';
 import '../search-panel/search-panel.css';
 const App = () => {
-    return (
-        <div className='app'>
-            <AppHeader/>
-            <div className='search-panel d-flex'>
-                <SearchPanel/>
-                <PostStatusFilter/>
+    const data =[
+        {label: 'jkkjhjkhjkhjkh', important:true,id:'uiyui'},
+        {label: 'aaaaaaaaaaaa', important:false,id:"kljklj"},
+        {label: 'fffffff', important:false,id:'kj'},
+    ];
+    if (typeof(data)==="object"){
+        return (
+            <div className='app'>
+                <AppHeader/>
+                <div className='search-panel d-flex'>
+                    <SearchPanel/>
+                    <PostStatusFilter/>
+                </div>
+            <PostList posts={data}/>
+    <PostAddForm/>
             </div>
-           <PostList/>
-<PostAddForm/>
-        </div>
-    )
+        )
+    }
 }
 export default App
