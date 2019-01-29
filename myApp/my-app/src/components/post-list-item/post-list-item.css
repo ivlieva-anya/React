@@ -9,6 +9,7 @@
   font-size: 17px;
   border: none;
   cursor: pointer;
+  background-color: #fff;
 }
 .app-list-item button:focus {
     box-shadow: none;
